@@ -1,0 +1,155 @@
+.service-section {
+    padding: 50px 0;
+    background-image: linear-gradient(rgb(51 52 52 / 75%), rgb(51 51 51 / 75%)), url(images/service-area-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-box {
+    border-radius: 3px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.img-box img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.half-area {
+    border: 1px solid #ffffff73;
+    border-radius: 3px;
+    background-color: #42546e;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-section h1 a {
+    color: #fff;
+}
+
+.service-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: #42546E;
+    padding: 5px;
+    border-bottom: 1px solid forestgreen;
+}
+
+.service-city img {
+    width: 45px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.dvCity-list-content {
+    overflow-y: scroll;
+    position: relative;
+    height: 265px;
+    padding: 20px;
+}
+
+.dvCity-list-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dvCity-list-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.dvCity-list-content::-webkit-scrollbar-thumb {
+    background-color: #424242;
+    border-radius: 10px;
+}
+
+ul.cities {
+    list-style-type: none;
+    margin: 0;
+    column-count: 4;
+    padding: 0;
+}
+
+.cities li a {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #00000078;
+}
+
+.cities li a:after {
+    content: '\f124';
+    font-family: fontawesome;
+    color: #fff;
+    background-color: forestgreen;
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.cities li a:hover {
+    color: #fff;
+    background-color: forestgreen;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.cities li a:hover:after {
+    color: forestgreen;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* Media Query */
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .dvCity-list-content {
+        height: 245px;
+    }
+
+    ul.cities {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    ul.cities {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 350px) {
+    .dvCity-list-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    ul.cities {
+        column-count: 1;
+    }
+
+    .service-city img {
+        width: 35px;
+    }
+}
